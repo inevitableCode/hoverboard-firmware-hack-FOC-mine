@@ -20,7 +20,7 @@ jobs:
         
     #I added this
     - name: Download a Build Artifact
-      uses: actions/download-artifact@v4.2.1
+      uses: actions/download-artifact@v3
   
     # Build with make
     - name: make
