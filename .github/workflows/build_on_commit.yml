@@ -17,7 +17,11 @@ jobs:
     - uses: carlosperate/arm-none-eabi-gcc-action@v1
       with:
         release: '9-2019-q4'
-
+        
+    #I added this
+    - name: Download a Build Artifact
+      uses: actions/download-artifact@v4.2.1
+  
     # Build with make
     - name: make
       env: 
